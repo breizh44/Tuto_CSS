@@ -1,0 +1,29 @@
+/*
+body {
+    background: red;
+}
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap'); /* en faisant ça, on est dépendant d'internet => il vaut mieux importer les polices */
+
+@font-face {
+    font-family: "DMSerif";
+    src: url(./assets/fonts/DMSerifDisplay-Regular.ttf);
+}
+
+body {
+    font-family: "DMSerif", Verdana;
+}
+
+h1 {
+    text-transform: uppercase;
+    letter-spacing: 3px; /* espacement de 3 pixels entre les lettres */
+    text-align: center;
+    font-size: 2.5rem; /* taille de police 2.5rem <=> 2.5 x root-element sachant qu'en général 1rem=16px */
+    text-shadow: 2px 2px 7px #00000075; /* il est possible via l'inspecteur de chrome d'utiliser l'éditeur d'ombrage */
+    color: rgb(25, 10, 140);
+    /* utiliser https://fonts.google.com/ pour trouver une jolie police (télécharger ou importer) */
+    font-family: "Oswald", sans-serif; /* font = "Oswald" ou à défaut "sans-serif" */
+}
+
+
