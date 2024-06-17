@@ -13,6 +13,8 @@ body {
 
 body {
     font-family: "DMSerif", Verdana;
+    background: url(./assets/img/bg.jpg) center/cover;
+    min-height: 100vh; /* 100% viewport height => l'image doit faire minimum 100% de la taille de l'ecran de l'utilisateur */
 }
 
 h1 {
