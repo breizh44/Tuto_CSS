@@ -36,3 +36,6 @@ Extension VScode utile : live server (permet de mettre à jour la page html en l
 - partir de la taille d'écran la plus grande, puis réduire petit à petit la taille de la fenêtre jusqu'à ce que le design "se casse"
 - utiliser "@media screen" pour adapter les styles en fonction de a taille de la fenêtre
 
+## Etape 7 : comment debugger le CSS
+- ajouter le style "border: 2px solid red;" dans * (all) permet de visualiser la taille et le contour de chaque élément
+- utiliser la console de debuggage (clic-droit sur la page, puis "inspecter") pour visualiser les propriétés de chaque élément de la page

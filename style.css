@@ -14,10 +14,12 @@ body {
 /* l'etoile applique un style à TOUS les éléments 
 Donc le style ci-dessous revient à remettre à 0 toutes les marges et tous les paddings par défaut
 */
-/* * {
+/* 
+ * {
     margin: 0;
     padding: 0;
-} */
+    border: 2px solid red;
+}  */
 
 body {
     font-family: "DMSerif", Verdana; /* Attention : les input et textarea ne sont pas concernés par cette police !*/
