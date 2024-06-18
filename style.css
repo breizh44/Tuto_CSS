@@ -20,7 +20,7 @@ Donc le style ci-dessous revient à remettre à 0 toutes les marges et tous les 
 } */
 
 body {
-    font-family: "DMSerif", Verdana;
+    font-family: "DMSerif", Verdana; /* Attention : les input et textarea ne sont pas concernés par cette police !*/
     background: url(./assets/img/bg.jpg) center/cover;
     min-height: 100vh; /* 100% viewport height => l'image doit faire minimum 100% de la taille de l'ecran de l'utilisateur */
 }
@@ -92,4 +92,45 @@ h2 {
 .grid img {
     width: 80%; /* l'image prend 80% de son parent en largeur */
     margin-top: 20px;
+}
+
+form {
+    display:grid;
+    grid-template-columns: 1fr 1fr; /* grille de 2 colonnes */
+    grid-template-rows: 1fr 1fr 1fr; /* grille de 3 lignes */
+    grid-template-areas: 
+     "i1 i2"
+     "ta ta"
+     "vi bt";  /* on "dessine" la répartition de nos éléments dans le grille (i1 = input1, i2 = input2, ta = textarea, vi = vide, bt = bouton */
+}
+
+/* style qui s'applique à tous les input et la textarea */
+input, textarea {
+    margin: 5px;
+    border: 1px solid darkblue;
+    padding: 10px;
+    font-size: 1.1rem;
+    font-family: "DMSerif";
+    border-radius: 5px;
+}
+
+/* on applique maintenant le positionnement défini via le grid-template-areas */
+textarea {
+    grid-area: ta;
+    height: 40px;
+    resize: none; /* on interdit le resize sur le textarea car ça peut casser le layout */
+}
+
+/* style pour le bouton d'id=btn-submit */
+#btn-submit {
+    grid-area: bt;
+    cursor: pointer;
+    background: cyan;
+    transition:0.5s;
+}
+
+/* effet sur le survol du bouton btn-submit */
+#btn-submit:hover {
+    background: darkblue;
+    color:white;
 }

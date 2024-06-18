@@ -23,3 +23,5 @@ Extension VScode utile : live server (permet de mettre à jour la page html en l
 - création d'une balise img dans la classe "grid-container"
 - création d'un formulaire dans la classe "grid-container"
 - mise en place d'une grille pour répartir horizontalement l'image et le formulaire
+
+**Remarque :** par défaut la plupart des éléments HTML possèdent un display. Par défaut le display est block (div, h1, h2, ...) : on prend toute la largeur de la page et on renvoie à la ligne.
