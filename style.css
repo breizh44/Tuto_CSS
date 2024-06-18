@@ -56,11 +56,12 @@ h2 {
 }
 
 /* Le style ci-dessous s'applique à tous les éléments de classe "flexbox" et "grid" */
-.flexbox, .grid {
+.flexbox, .grid, .absolute {
     border: 2px solid skyblue;
     border-radius: 10px;
     padding: 10px;
     margin-top: 20px;
+    min-height: 150px;
 }
 
 /* FLEXBOX */
@@ -134,3 +135,31 @@ textarea {
     background: darkblue;
     color:white;
 }
+
+/* ABSOLUTE */
+/* Sans élément en relative, de base, l'élément en absolute l'est par rapport 
+au body */
+/* Il faut contraindre une position relative au parent pour contraindre 
+l'élément en absolute dans ses fontières */
+.absolute {
+    position:relative; /* les éléments enfant en position:absolute sont contenus dans les frontières de leur parent */
+}
+#circle1 {
+  height: 80px;
+  width: 80px;
+  background: skyblue;  
+  position: absolute;
+  border-radius: 150px;
+  top:0;
+  right:0;
+}
+#circle2 {
+    height: 40px;
+    width: 40px;
+    background: teal;  
+    position: absolute;
+    border-radius: 150px;
+    top:100px;
+    left:50%;
+    transform: translateX(-50%); /* Décalage en X de 50% de sa propre taille pour bien centrer le cercle */
+  }

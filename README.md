@@ -25,3 +25,9 @@ Extension VScode utile : live server (permet de mettre à jour la page html en l
 - mise en place d'une grille pour répartir horizontalement l'image et le formulaire
 
 **Remarque :** par défaut la plupart des éléments HTML possèdent un display. Par défaut le display est block (div, h1, h2, ...) : on prend toute la largeur de la page et on renvoie à la ligne.
+
+## Etape 5 : Utilisation du positionnement absolu
+- création d'une balise div portant la classe "absolute" (taper ".absolute" dans VScode)
+- creation de 2 balises span pour dessiner 2 cercles
+- puis positionnement des 2 cercles en absolu par rapport à la balise div
+  
