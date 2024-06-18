@@ -31,3 +31,8 @@ Extension VScode utile : live server (permet de mettre à jour la page html en l
 - creation de 2 balises span pour dessiner 2 cercles
 - puis positionnement des 2 cercles en absolu par rapport à la balise div
   
+
+## Etape 6 : le responsive
+- partir de la taille d'écran la plus grande, puis réduire petit à petit la taille de la fenêtre jusqu'à ce que le design "se casse"
+- utiliser "@media screen" pour adapter les styles en fonction de a taille de la fenêtre
+

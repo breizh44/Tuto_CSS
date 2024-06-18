@@ -30,6 +30,7 @@ h1 {
     letter-spacing: 3px; /* espacement de 3 pixels entre les lettres */
     text-align: center;
     font-size: 2.5rem; /* taille de police 2.5rem <=> 2.5 x root-element sachant qu'en général 1rem=16px */
+    /* font-size: 8vw; */ /* taille de police en relatif par rapport à la viewport width */
     text-shadow: 2px 2px 7px #00000075; /* il est possible via l'inspecteur de chrome d'utiliser l'éditeur d'ombrage */
     color: rgb(25, 10, 140);
     /* utiliser https://fonts.google.com/ pour trouver une jolie police (télécharger ou importer) */
@@ -92,7 +93,8 @@ h2 {
 }
 .grid img {
     width: 80%; /* l'image prend 80% de son parent en largeur */
-    margin-top: 20px;
+    margin: 20px auto;
+    display: block;
 }
 
 form {
@@ -162,4 +164,40 @@ l'élément en absolute dans ses fontières */
     top:100px;
     left:50%;
     transform: translateX(-50%); /* Décalage en X de 50% de sa propre taille pour bien centrer le cercle */
+  }
+
+  /* RESPONSIVE */
+  /* Attention de bien se mettre en affichage 100% pour faire ses réglages de responsive */
+
+  /* réglages activé quand on est sous les 900 pixels */
+  @media screen and (max-width: 900px) {
+    .grid-container {
+        display: block; /* on passe en display block donc on revient à la ligne donc l'image et le formulaire passe l'un sous l'autre*/
+    }
+
+    .grid-container img {
+        width: 40%;
+    }
+  }
+
+  /* en dessous de 600px on passe le formulaire sur 1 colonne */
+  @media screen and (max-width: 600px) {
+    /* on modifie la direction de la flexbox */
+    .flexbox ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    /* on passe le formulaire sur 1 colonne */
+    form {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+            "i1"
+            "i2"
+            "ta"
+            "bt";
+    }
+    input, textarea {
+       font-size: 0.8rem; /* on réduite la taille de la police */
+    }
   }
