@@ -13,3 +13,6 @@ Extension VScode utile : live server (permet de mettre à jour la page html en l
 - pour créer une balise div portant la classe "flexbox", taper juste ".flexbox" dans VScode. VScode va générer automatiquement la div avec la classe.
 - pour créer une balise de ul avec 3 sous balise li : taper "ul>li*3"
 - installer le plugin rulerMeasurement dans chrome (pratique pour mesurer les dimensions sur la page HTML)
+
+## Etape 3 : mise en place des flexboxs
+- utilisation de display:flex (et paramétrage) pour gérer la répartition des éléments li

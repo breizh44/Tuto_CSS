@@ -37,7 +37,10 @@ h1 {
 }
 
 main {
-    height: 500px; /* ne pas utiliser de % sur les hauteurs */
+    min-height: 500px; /* ne pas utiliser de % sur les hauteurs.
+                       Il faut également éviter de mettre une hauteur figée (height: 500px par exemple)
+                       car sinon on risque d'avoir des éléments contenus dans main qui vont déborder.
+                       Il vaut mieux utiliser min-height (hauteur min) qui va laisser la hauteur s'adapter */
     width: 90%; /* par contre sur les largeurs c'est très pratique d'utiliser les % */
     background: rgba(236, 232, 232, 0.528);
     /* pour centrer la boite */
@@ -60,3 +63,23 @@ h2 {
     margin-top: 20px;
 }
 
+/* FLEXBOX */
+/* Sert à répartir équitablement des éléments sur la page */
+.flexbox ul {
+    padding: 0;
+    display: flex; /* dans chrome il y a un outil graphique pour paramétrer le display flex (très pratique) */
+    justify-content: space-around;
+}
+
+/* S'applique aux li situés dans la classe "flexbox" */
+.flexbox li {
+    list-style: none; /* On enlève le style qui s'applique aux li (donc les bullets) */
+    height: 160px;
+    width: 160px;
+    margin: 10px;
+    background: turquoise;
+    /* Centrer un unique verticalement et horizontalement */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
