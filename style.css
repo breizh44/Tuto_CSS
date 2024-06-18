@@ -55,8 +55,8 @@ h2 {
     margin: 0;
 }
 
-/* Le style ci-dessous s'applique à tous les éléments de classe "flexbox" */
-.flexbox {
+/* Le style ci-dessous s'applique à tous les éléments de classe "flexbox" et "grid" */
+.flexbox, .grid {
     border: 2px solid skyblue;
     border-radius: 10px;
     padding: 10px;
@@ -82,4 +82,14 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* GRID */
+.grid-container {
+    display: grid;  
+    grid-template-columns: 30% 70%; /* les elements du grid-container sont répartis en 2 colonnes qui prennent respectivement 30% et 70% de l'espace */
+}
+.grid img {
+    width: 80%; /* l'image prend 80% de son parent en largeur */
+    margin-top: 20px;
 }

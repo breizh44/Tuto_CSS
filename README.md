@@ -16,3 +16,10 @@ Extension VScode utile : live server (permet de mettre à jour la page html en l
 
 ## Etape 3 : mise en place des flexboxs
 - utilisation de display:flex (et paramétrage) pour gérer la répartition des éléments li
+
+## Etape 4 : utilisation des grids pour un layout plus complexe
+- création d'une balise div portant la classe "grid" (taper ".grid" dans VScode)
+- puis création d'une sous balise portant la classe "grid-container"
+- création d'une balise img dans la classe "grid-container"
+- création d'un formulaire dans la classe "grid-container"
+- mise en place d'une grille pour répartir horizontalement l'image et le formulaire
